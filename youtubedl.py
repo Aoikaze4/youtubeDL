@@ -1,6 +1,8 @@
 import youtube_dl
 import shutil
+import os
 
+path = os.path
 videoUrl = input("plz type URL:")
 audioDict = '/audio'
 
@@ -20,7 +22,7 @@ with youtube_dl.YoutubeDL(pref) as ydl:
 
 ##print(videoInfo)
 
-shutil.move(videoInfo['title'] + '.mp3', '/audio')
+shutil.move('./' + videoInfo['title'] + '.mp3', './audio')
 
 print(videoInfo['title']+'¥n'+videoInfo['url'])
 print('Downloaded.')
