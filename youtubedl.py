@@ -20,8 +20,6 @@ pref = {
 with youtube_dl.YoutubeDL(pref) as ydl:
     videoInfo = ydl.extract_info(videoUrl, download='True')
 
-##print(videoInfo)
-
 shutil.move('./' + videoInfo['title'] + '.mp3', './audio')
 
 print(videoInfo['title']+'¥n'+videoInfo['url'])
