@@ -2,7 +2,6 @@ import youtube_dl
 import shutil
 import os
 
-path = os.path
 videoUrl = input("plz type URL:")
 audioDict = '/audio'
 
